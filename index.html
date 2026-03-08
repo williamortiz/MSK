@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSK - Manhattan Subway Kings</title>
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+    }
+
+    .nav-logo {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-right a.contact-link {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-right a.contact-link:hover {
+      opacity: 0.8;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: opacity 0.2s;
+    }
+
+    .social-icons a:hover {
+      opacity: 0.7;
+    }
+
+    .social-icons svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    /* Main Content */
+    main {
+      padding: 60px 48px 80px;
+      max-width: 1200px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 32px;
+      font-weight: 400;
+    }
+
+    .history-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .consulting {
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+
+    .consulting a {
+      font-style: italic;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        padding: 20px 24px;
+      }
+
+      .nav-right {
+        gap: 16px;
+      }
+
+      .social-icons {
+        gap: 14px;
+      }
+
+      main {
+        padding: 40px 24px 60px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+      }
+
+      .history-text {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 16px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .nav-right {
+        gap: 12px;
+      }
+
+      .nav-right a.contact-link {
+        font-size: 0.9rem;
+      }
+
+      .social-icons {
+        gap: 12px;
+      }
+
+      .social-icons svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      main {
+        padding: 32px 16px 48px;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+        margin-bottom: 16px;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        margin-bottom: 24px;
+      }
+
+      .history-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">MSK</a>
+    <div class="nav-right">
+      <a href="mailto:contact@msknyc.com" class="contact-link">Contact</a>
+      <div class="social-icons">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Manhattan Subway Kings</h1>
+
+    <p class="subtitle">The History of Manhattan Subway Kings.</p>
+
+    <p class="history-text">
+      <strong>MSK</strong> originally began in the fall of 1983. <strong>CHI</strong>, <strong>FURN</strong>, <strong>MADE</strong>, <strong>WASE</strong> were the first 4 members. We all attended JH52 from 1980-1984. Made msk is credited with the crew name and it originally stood for &ldquo;Manhattan Subway Kids&rdquo;. We were youngsters running the Dyckman (200 st) layups and battling crews from Brooklyn for dominance of the &ldquo;A&rdquo; line. Fame came quickly and expansion came heavy. We were the youngsters running with some heavy uptown gangster crews. &ldquo;MR&rdquo; betta is known as Manhattan Rebels, Renegades, and others. We all held down the blocks 200-207 St. Broadway to Post Ave. We all merged into a massive crew. &ldquo;Manhattan Subway Kings&rdquo; was born. Members included <a href="#">#Dia</a>-president, #2-New-warlord, Magnum-vice Pres. <strong>#Chi</strong>, <strong>#Furn</strong>, Made, Wase, <strong>#Ram</strong>, <strong>#Dae</strong>, <strong>#Nie</strong>, <strong>#Sak</strong>, <strong>#Kc</strong> and the list goes on. We were a force to be reckoned in any yard north of 168. Including 175, 200, 225, bus yard, sanitation yard, and the ghost yard. After the Great Train Scrub late 80&rsquo;s-90&rsquo;s much of the crew moved on with their lives since there was no longer a &ldquo;Subway Culture&rdquo; Lots of the graffiti moved from the tunnels to the walls and then to the galleries, <a href="#">#MSK</a> has never ended. The current crew heavyweights are <a href="#">#Kister</a> <strong>#Frankism</strong> <strong>#Cone</strong>, <strong>#Kron</strong>, <strong>#Nare</strong>, <strong>#Dreb</strong>, <strong>#Cable</strong>, <strong>#Mile</strong>, <strong>#Kip</strong> <strong>#Cel</strong>,<strong>#Lets</strong>, <strong>#Richbudda</strong> <strong>#Aliven</strong>, <strong>#kerz</strong>, <strong>#zinc</strong> <strong>#Bester</strong>, #Devis2 #LP5#cen, #yayo, #Binho (brazil) #Bebar (paris), #Tore (Italy), #Gamo &amp; #kitsa (Paris),#Maha (Australia) and many more still holding it down to date.
+    </p>
+
+    <p class="consulting">
+      Currently available for <a href="mailto:contact@msknyc.com">consulting engagements</a>.
+    </p>
+  </main>
+</body>
+</html>
